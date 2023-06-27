@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --base-color: 194;
+  --bg-color: white;
+  --button-color: hsl(var(--base-color), 100%, 63%);
+  --text-color: black;
+  --bg-primary-light: hsla(var(--base-color), 100%, 63%, 0.13);
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-color);
+}
+
+main {
+  display: flex;
+  margin: auto;
+  height: 33.6rem;
+  width: 82.1rem;
+  justify-self: center;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#container1 {
+  margin: auto;
+  height: 21.3rem;
+  width: 32.1rem;
+}
+
+#container1 span {
+  font-size: 12rem;
+  line-height: 14.8rem;
+  line-height: 100%;
+}
+
+#controls {
+  display: flex;
+
+  height: 48px;
+  width: 312px;
+  gap: 4rem;
+  margin-top: 4.5rem;
+  margin-left: 0.4rem;
+}
+
+#controls button {
+  height: 4.8rem;
+  width: 4.8rem;
+}
+
+#sounds {
+  margin-left: 19.2rem;
+  height: 33.6rem;
+  width: 30.8rem;
+}
+
+#sounds button {
+  height: 15.2rem;
+  width: 13.8rem;
+  border-radius: 0.2rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.playy svg path /* Só pode ser usado para mudar as cores dos ícones se eles estiverem com a pasta svg direto no html*/ {
+  fill: var(--button-color);
+}
+
+.hide {
+  display: none;
+}
+
+.colorButton svg path {
+  fill: var(--button-color);
+}
+
+.colorSound svg path:first-child {
+  fill: #02799d;
+}
+
+.colorSound svg path {
+  fill: white;
+}
+
+footer {
+  justify-self: end;
+  align-self: end;
+  padding: 0 4rem 3.2rem 0;
+}
